@@ -1,6 +1,6 @@
 ﻿# Car-Rental
 
-a fully functional Car Rental Website using the MERN stack (MongoDB, Express.js, React.js and Node.js).
+A fully functional Car Rental Website using the MERN stack (MongoDB, Express.js, React.js and Node.js).
 
 Key Features:
 
