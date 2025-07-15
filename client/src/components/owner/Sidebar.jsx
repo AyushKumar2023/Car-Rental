@@ -18,7 +18,7 @@ function Sidebar() {
 
         <div className='group relative'>
             <label htmlFor="image">
-                <img src={image ? URL.createObjectURL(image) : user?.image || "https://unsplash.com/photos/people-walk-past-radio-city-music-hall-tXm1p-5ZDFA"} alt="" />
+                <img className='h-9 md:h-14 w-9 md:w-14 rounded-full mx-auto' src={image ? URL.createObjectURL(image) : user?.image || "https://unsplash.com/photos/people-walk-past-radio-city-music-hall-tXm1p-5ZDFA"} alt="" />
                 <input onChange={(e)=>setImage(e.target.files[0])}
                   type="file" 
                   id="image" 
