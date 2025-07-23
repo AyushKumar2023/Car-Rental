@@ -14,7 +14,7 @@ const checkAvailability=async (car, pickupDate, returnDate)=>{
 }
 
 // api to check availability of cars for the given date and location
-export const checkAvailabilityOfCar=async (requestAnimationFrame, res)=>{
+export const checkAvailabilityOfCar=async (req, res)=>{
     try {
         const {location, pickupDate, returnDate}=req.body
 
@@ -152,8 +152,9 @@ export const changeBookingStatus=async (req, res)=>{
                 message: "Not Authorized"
             })
         }
+        const normalizedStatus = status.toLowerCase();
 
-        booking.status=status
+        booking.status=normalizedStatus
         await booking.save()
 
         res.json({

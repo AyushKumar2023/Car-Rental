@@ -76,7 +76,7 @@ function ManageBookings() {
 
                 <td className='p-3'>
                   {booking.status === 'pending' ? (
-                    <select onClick={e=>changeBookingStatus(booking._id, e.target.value)} value={booking.status} className='px-2 py-1.5 mt-1 text-gray-500 border border-borderColor rounded-md outline-none'>
+                    <select onChange={e=>changeBookingStatus(booking._id, e.target.value)} value={booking.status} className='px-2 py-1.5 mt-1 text-gray-500 border border-borderColor rounded-md outline-none'>
                       <option value="Pending">Pending</option>
                       <option value="Cancelled">Cancelled</option>
                       <option value="Confirmed">Confirmed</option>
