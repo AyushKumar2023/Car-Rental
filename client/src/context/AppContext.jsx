@@ -3,7 +3,7 @@ import axios from 'axios'
 import {toast} from 'react-hot-toast'
 import { useNavigate } from "react-router-dom";
 
-axios.defaults.baseURL=import.meta.env.VITE_BACKEND_URL
+axios.defaults.baseURL=import.meta.env.VITE_BACKEND_URL || "https://car-rental-backend-u7i7.onrender.com"
 
 export const AppContext= createContext()
 
